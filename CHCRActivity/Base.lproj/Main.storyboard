@@ -1,24 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EWM-aH-pTr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--대한민국  애플스토어-->
+        <scene sceneID="NM5-Ei-Zbc">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <tableViewController id="M8H-Lp-ngL" customClass="ViewController" customModule="CHCRActivity" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="MaX-cm-6LC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="4aO-w7-gqI">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" id="xKH-2X-lwD">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xKH-2X-lwD" id="Vdj-IX-Z6X">
+                                            <rect key="frame" x="0.0" y="0.0" width="370" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="애플스토어 가로수길점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdA-K0-X8l">
+                                                    <rect key="frame" x="30" y="11.5" width="151.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="서울특별시 신사동 압구정로12길 46" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mug-cF-H2g">
+                                                    <rect key="frame" x="189.5" y="11.5" width="162.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Mug-cF-H2g" firstAttribute="centerY" secondItem="Vdj-IX-Z6X" secondAttribute="centerY" id="1Dn-7u-eqb"/>
+                                                <constraint firstItem="TdA-K0-X8l" firstAttribute="leading" secondItem="Vdj-IX-Z6X" secondAttribute="leadingMargin" constant="10" id="X0k-nH-UrS"/>
+                                                <constraint firstItem="Mug-cF-H2g" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TdA-K0-X8l" secondAttribute="trailing" constant="8" symbolic="YES" id="ce1-5r-GBh"/>
+                                                <constraint firstItem="TdA-K0-X8l" firstAttribute="centerY" secondItem="Vdj-IX-Z6X" secondAttribute="centerY" id="iOS-tH-221"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Mug-cF-H2g" secondAttribute="trailing" constant="10" id="sdn-ZF-gkk"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" id="ZE5-bl-Bxx">
+                                        <rect key="frame" x="0.0" y="71.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZE5-bl-Bxx" id="sUS-uN-71Y">
+                                            <rect key="frame" x="0.0" y="0.0" width="370" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="애플스토어 여의도점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynD-rQ-IRh">
+                                                    <rect key="frame" x="30" y="11.5" width="137" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="서울특별시 영등포구 국제금융로 10 지하 1층" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHL-Sb-bKz">
+                                                    <rect key="frame" x="175" y="11.5" width="177" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ynD-rQ-IRh" firstAttribute="leading" secondItem="sUS-uN-71Y" secondAttribute="leadingMargin" constant="10" id="Qgb-Ix-6SD"/>
+                                                <constraint firstItem="VHL-Sb-bKz" firstAttribute="centerY" secondItem="sUS-uN-71Y" secondAttribute="centerY" id="lky-fk-Fkl"/>
+                                                <constraint firstItem="ynD-rQ-IRh" firstAttribute="centerY" secondItem="sUS-uN-71Y" secondAttribute="centerY" id="m1A-iO-PKH"/>
+                                                <constraint firstItem="VHL-Sb-bKz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ynD-rQ-IRh" secondAttribute="trailing" constant="8" symbolic="YES" id="n9W-69-p6J"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="VHL-Sb-bKz" secondAttribute="trailing" constant="10" id="yQd-pl-X7e"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="M8H-Lp-ngL" id="jiH-hM-XPn"/>
+                            <outlet property="delegate" destination="M8H-Lp-ngL" id="zgg-O9-ftm"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="대한민국  애플스토어" id="TLL-4k-X6i"/>
+                    <connections>
+                        <outletCollection property="addressLabels" destination="Mug-cF-H2g" collectionClass="NSMutableArray" id="fdU-Ts-Am1"/>
+                        <outletCollection property="addressLabels" destination="VHL-Sb-bKz" collectionClass="NSMutableArray" id="crQ-9z-4XP"/>
+                        <outletCollection property="nameLabels" destination="TdA-K0-X8l" collectionClass="NSMutableArray" id="RZH-K0-jM1"/>
+                        <outletCollection property="nameLabels" destination="ynD-rQ-IRh" collectionClass="NSMutableArray" id="4Pn-PD-XQD"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lg5-7f-hkU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1382.608695652174" y="125.89285714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MRQ-X7-ita">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EWM-aH-pTr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Aw5-0Z-E7M">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="M8H-Lp-ngL" kind="relationship" relationship="rootViewController" id="fqe-dc-qrm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Qg-V4-a7P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="473.91304347826093" y="125.89285714285714"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
